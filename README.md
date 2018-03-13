@@ -6,13 +6,12 @@
   
   - Add bitbucket git remote
   
-        git remote add staging https://heyh@bitbucket.org/xberts/web.git
-        git remote add prod https://heyh@bitbucket.org/xberts/web.git
+        git remote add origin https://heyh@bitbucket.org/heyh/socialcommer_admin.git
         
 ### Update staging server
   - Push update
   
-        git push prod master:master
+        git push
         
 ### Update production server
   - Run 
