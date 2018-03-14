@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "serve": "ng serve --port 8080",
+    "serve": "ng serve --port 8081",
     "start": "node server.js",
     "build": "ng build",
     "test": "ng test",

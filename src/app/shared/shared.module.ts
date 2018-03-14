@@ -26,9 +26,6 @@ import { ImageUploadHeaderComponent } from './components/image-upload-header/ima
 import { ImageUploadPreviewBlogComponent } from './components/image-upload-preview-blog/image-upload-preview-blog.component';
 import { ImagePreviewLoadingComponent } from './components/image-preview-loading/image-preview-loading.component';
 import { LeftProductsImageComponent } from './components/left-products-image/left-products-image.component';
-import { ShareButtonComponent } from './components/share-button/share-button.component';
-import { ShareButtonRowComponent } from './components/share-button-row/share-button-row.component';
-import { StoreNavigationComponent } from './components/store-navigation/store-navigation.component';
 import { NavigationHeaderComponent } from './components/navigation-header/navigation-header.component';
 import { BottomFooterComponent } from './components/bottom-footer/bottom-footer.component';
 
@@ -140,9 +137,6 @@ let providers = {
     ImagePreviewLoadingComponent,
     ImageUploadPreviewBlogComponent,
     LeftProductsImageComponent,
-    ShareButtonComponent,
-    StoreNavigationComponent,
-    ShareButtonRowComponent,
     NavigationHeaderComponent,
     BottomFooterComponent,
     LoginDialogComponent,
@@ -180,9 +174,6 @@ let providers = {
     ImageUploadPreviewTwoTemplateComponent,
     ImageUploadPreviewFourTemplateComponent,
     LeftProductsImageComponent,
-    ShareButtonComponent,
-    StoreNavigationComponent,
-    ShareButtonRowComponent,
     NavigationHeaderComponent,
     BottomFooterComponent,
     LoginDialogComponent,

@@ -8,12 +8,11 @@ import { AuthenticationService } from '../authentication/authentication.service'
 
 import { BaseApi,SystemConstant } from '../../../config/app.api';
 import { User } from './user';
-import { Store } from '../../../shop/shop';
 
 @Injectable()
 export class UserService {
   currentUser: Subject<User> = new BehaviorSubject<User>(null);
-  store: Subject<Store> = new BehaviorSubject<Store>(null);
+  store: Subject<any> = new BehaviorSubject<any>(null);
   userCategory: Subject<any> = new BehaviorSubject<any>(null);
   pubCategory: Subject<any> = new BehaviorSubject<any>(null);
   countryList: Subject<any> = new BehaviorSubject<any>(null);
@@ -22,7 +21,7 @@ export class UserService {
     this.currentUser.next(newUser);
   }
 
-  public addStore(newStore: Store): void {
+  public addStore(newStore: any): void {
     this.store.next(newStore);
   }
 

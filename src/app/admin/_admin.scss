@@ -1,0 +1,165 @@
+@import "../styles/utils/_index";
+@import "../styles/_variables";
+
+.xb-shop{
+  &__logo{
+    position: relative;
+
+    &-bg{
+      height: 56px;
+      padding: 0 16px;
+      background-color: $whiteColor;
+      border-bottom: 1px solid rgba(0,0,0,.12);
+    }
+    &-badge{
+      position: absolute;
+      top: -2px;
+      left: 100%;
+      background-color: #fec32d;
+      color: $whiteColor;
+      line-height: 14px;
+      font-size: 10px;
+      border-radius: 2px;
+      padding: 0 4px;
+    }
+
+    &-button{
+      position: relative;
+      margin: 0 16px;
+      line-height: 56px;
+      font-size: 16px;
+      display: block;
+      @include media();
+      color: $primaryColor;
+      cursor: pointer;
+      &.active{
+        border-bottom: 2px solid $primaryColor;
+      }
+    }
+  }
+  &__bg-content{
+    height: calc(100vh - 56px);
+  }
+  &__avatar{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    position: relative;
+  }
+  &__icons{
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  &__left-navigation{
+    padding-top: 16px;
+    border-right: 1px solid rgba(0,0,0,.12);
+    background-color: #0a2529;
+
+    &-scroll{
+      overflow-y: scroll;
+    }
+
+    &-arrow{
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid $primaryColor;
+      margin-left: 8px;
+    }
+
+    &-arrow-1{
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 5px solid $whiteColor;
+      margin-left: 8px;
+      display: none;
+    }
+
+    &-bg{
+      width: 160px;
+    }
+
+    &-buttons{
+      padding-left: 8px;
+      height: 56px;
+      color: $whiteColor;
+      @include media();
+      cursor: pointer;
+      &.active{
+        color: $primaryColor;
+      }
+
+    }
+
+    &-bg-1{
+      background-color: #051c1d;
+      border-top: 1px solid rgba(255,255,255,.12);
+    }
+
+    $parent: &;
+
+    &-buttons-1{
+      padding-left: 8px;
+      height: 56px;
+      color: $whiteColor;
+      @include media();
+      cursor: pointer;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+      &.active{
+        #{$parent}-arrow-1{
+          display: block;
+        }
+      }
+
+    }
+  }
+
+  &__scroll{
+    overflow-y: scroll;
+  }
+
+  &__pop-bg{
+    position: relative;
+    padding: 8px 0 8px 8px;
+    cursor: pointer;
+    &-list{
+      position: absolute;
+      right: 0;
+      top: 100%;
+      line-height: 36px;
+      width: 120px;
+      text-align: center;
+      background-color: $whiteColor;
+      @include resetBorder();
+      font-size: 16px;
+      z-index: 100;
+      display: none;
+      div{
+        &:hover{
+          background-color: rgba(0,0,0,.12);
+        }
+      }
+    }
+
+    $parent: &;
+    &:hover{
+      #{$parent}-list{
+        display: block;
+      }
+    }
+  }
+
+}
+
+.xb-error{
+  height: calc(100vh - 56px);
+  overflow-y: scroll;
+  background-color: $whiteColor;
+}

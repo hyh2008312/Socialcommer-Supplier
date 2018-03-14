@@ -13,12 +13,9 @@ const routes: Routes = [
         path: 'account',
         loadChildren: 'app/login/login.module#LoginModule'
       }, {
-        path: 'shop',
+        path: 'admin',
         canActivate: [ ProtectedGuard ],
-        loadChildren: 'app/shop/shop.module#ShopModule'
-      }, {
-        path: 'store',
-        loadChildren: 'app/store/store.module#StoreModule'
+        loadChildren: 'app/admin/admin.module#AdminModule'
       }, {
         path: '',
         loadChildren: 'app/landing-page/landing-page.module#LandingPageModule'
